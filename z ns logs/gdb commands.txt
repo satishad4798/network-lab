@@ -1,0 +1,26 @@
+./waf shell
+gdb build/scratch/star
+
+
+b/break 40,60             - break at 40,60
+
+info b/break              -display break point
+
+delete 1,2,3
+
+b/begin main           -run from main
+
+r/run                  -to run the program to start
+
+n/next
+
+p/print                -print variable_name
+ptype
+
+l/list                   -to display the code
+
+b/break f14    -add break point at line 14
+
+c/continue               -continue
+
+p/print  num=5           -intialising the varible

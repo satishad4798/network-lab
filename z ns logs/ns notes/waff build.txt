@@ -1,0 +1,431 @@
+waff build
+ 1526  ls
+ 1527  cd scratch/
+ 1528  ls
+ 1529  ./waf --run scratch-simulator.cc 
+ 1530  cd ..
+ 1531  ls
+ 1532  cd examples/
+ 1533  ls
+ 1534  cd tutorial/
+ 1535  ls
+ 1536  ./waf --run hello-simulator
+ 1537  cd ..
+ 1538  ./waf --run hello-simulator
+ 1539  ./waf --run scratch-simulator
+ 1540  ./waf --run first
+ 1541  ls
+ 1542  cd build
+ 1543  ls
+ 1544  cd scratch
+ 1545  ls
+ 1546  cd ..
+ 1547  ls
+ 1548  cd ns3
+ 1549  ls
+ 1550  cd ..
+ 1551  ls
+ 1552  cd examples/
+ 1553  ls
+ 1554  cd tutorial/
+ 1555  ls
+ 1556  cd ..
+ 1557  ls
+ 1558  cd src
+ 1559  ls
+ 1560  cd ..
+ 1561  cd utils
+ 1562  ls
+ 1563  cd ..
+ 1564  ./waf --run test-runner
+ 1565  ./waf --check-profile
+ 1566  ./waf configure --build-profile=optimized --enable-examples --enable-tests
+ 1567  pip install pyhthon_config
+ 1568  pip install pyhthon-config
+ 1569  sudo apt-get install pyhthon-config
+ 1570  sudo pip install pyhthon-config
+ 1571  ./waf --pyrun src/netanim/examples/tutorial/first.cc
+ 1572  ls
+ 1573  cd src
+ 1574  ls
+ 1575  cd netanim/
+ 1576  ls
+ 1577  cd examples/
+ 1578  ls
+ 1579  ./waf -d debug configure --enable-examples
+ 1580  ~/Desktop/ns3_workspace/ns-allinone-3.29/ns-3.29/./waf -d debug configure --enable-examples
+ 1581  cd ..
+ 1582  ls
+ 1583  cd netanim/
+ 1584  ls
+ 1585  cd doc
+ 1586  ls
+ 1587  cd ..
+ 1588  ./waf -d debug configure --enable-examples
+ 1589  ./waf --run "dumbbell-animation"
+ 1590  ./waf --pyrun src/flow-monitor/examples/wifi-olsr-flowmon.py --vis
+ 1591  sudo apt-get mercurial qt5-default
+ 1592  sudo apt-get install mercurial qt5-default
+ 1593  cd Desktop/
+ 1594  cd ns3_workspace/
+ 1595  cd ns-allinone-3.29/
+ 1596  ls
+ 1597  cd netanim-3.108/
+ 1598  ls
+ 1599  cd ..
+ 1600  cd ns-3.29/
+ 1601  ls
+ 1602  cd utils
+ 1603  ls
+ 1604  cd ..
+ 1605  cd src
+ 1606  ls
+ 1607  ./netanim
+ 1608  cd netanim
+ 1609  ls
+ 1610  cd examples/
+ 1611  ls
+ 1612  cd ..
+ 1613  ls
+ 1614  cd netanim-3.108/
+ 1615  ls
+ 1616  make clean
+ 1617  qmake NetAnim.pro 
+ 1618  make
+ 1619  ls
+ 1620  ./NetAnim 
+ 1621  cd ..
+ 1622  cd ns-3.29/
+ 1623  cd src
+ 1624  cd netanim/
+ 1625  cd examples/
+ 1626  vim wscript
+ 1627  ls
+ 1628  vim dumbbell-animation.cc 
+ 1629  cd ..
+ 1630  cd netanim-3.108/
+ 1631  ./NetAnim 
+ 1632  cd ns
+ 1633  cd Desktop/
+ 1634  cd ns3_workspace/
+ 1635  cd ns-allinone-3.29/
+ 1636  cd netanim-3.108/
+ 1637  ls
+ 1638  cd ..
+ 1639  sudo apt-get install
+ 1640  sudo apt-get install ipython
+ 1641  sudo apt-get install python-dev python-pygraphviz python-kiwi python-pygoocanvas                      python-gnome2 python-gnomedesktop python-rsvg
+ 1642  sudo apt-get install python-dev python-pygraphviz python-kiwi python3-pygoocanvas python-gnome2 python3-gnomedesktop python3-rsvg
+ 1643  cd ns-3.29/
+ 1644  ./waf --run src/netanim/examples/star-animation.cc --vis
+ 1645  ./waf --pyrun src/flow-monitor/examples/flowmon-parse-results.py --viz
+ 1646  ./waf --pyrun src/flow-monitor/examples/flowmon-parse-results.py --vis
+ 1647  ./waf --pyrun src/flow-monitor/examples/wifi-olsr-flowmon.py --vis
+ 1648  ./waf configure --enable-exapmles
+ 1649  ./waf configure --enable-examples
+ 1650  ./waf
+ 1651  ./waf --run "tcp-variants-comparison --tracing=true"
+ 1652  ls
+ 1653  subl tcp-cwnd.plt
+ 1654  gnuplot tcp-cwnd.plt
+ 1655  ./waf --run src/flow-monitor/examples/matrix-topology/matrix-topology.cc -vis
+ 1656  ./waf --run src/flow-monitor/examples/matrix-topology/matrix-topology.cc --vis
+ 1657  ./waf --pyrun src/flow-monitor/examples/matrix-topology/matrix-topology.cc --vis
+ 1658  cd Desktop/
+ 1659  cd ns3_workspace/
+ 1660  cd ns
+ 1661  cd ns-allinone-3.29/
+ 1662  cd ns-3.29/
+ 1663  ls
+ 1664  cd scratch/
+ 1665  ls
+ 1666  cd ..
+ 1667  cd examples/
+ 1668  ls
+ 1669  cd tutorial/
+ 1670  ls
+ 1671  sudo subl first.cc
+ 1672  cd ..
+ 1673  ./waf --run examples/tutorial/first
+ 1674  ls
+ 1675  sudo subl myfirst.tr
+ 1676  ./waf --help
+ 1677  cp examples/tutorial/first.cc scratch/myfirst.cc
+ 1678  ./waf
+ 1679  ./waf --run scratch/myfirst
+ 1680  ./waf -d debug --enable-examples --enable-tests configure
+ 1681  ./waf
+ 1682  ./waf install openflow
+ 1683  ls
+ 1684  ./waf --help
+ 1685  ./waf install netanim
+ 1686  cd src
+ 1687  ls
+ 1688  cd visualizer/
+ 1689  ls
+ 1690  cd ..
+ 1691  cd visualizer/
+ 1692  cd examples/
+ 1693  ls
+ 1694  cd ..
+ 1695  cd net
+ 1696  cd netanim/
+ 1697  ls
+ 1698  cd examples/
+ 1699  ls
+ 1700  l
+ 1701  cd ..
+ 1702  cd flow-monitor/
+ 1703  ls
+ 1704  cd test
+ 1705  ls
+ 1706  cd .
+ 1707  cd ..
+ 1708  cd examples/
+ 1709  ls
+ 1710  sudo apt-get install gnuplot
+ 1711  cd ..
+ 1712  ls
+ 1713  cd examples
+ 1714  cd ..
+ 1715  cd scratch/
+ 1716  ls
+ 1717  subl myfirst.cc 
+ 1718  java -V
+ 1719  java -version
+ 1720  sudo apt-get install openjdk-7-jdk
+ 1721  cd ..
+ 1722  cp examples/tcp/tcp-bulk-send.cc scratch/mytcp-bulk-send.cc
+ 1723  ./waf --run "scratch/mytcp-bulk-send --tracing=true"
+ 1724  ls
+ 1725  ./waf check
+ 1726  ./waf --check-profile
+ 1727  ./waf --valgrind --run first
+ 1728  ./waf configure --disable-gtk --enable-examples --enable-tests
+ 1729  ./waf --valgrind --run first
+ 1730  ./waf configure --enable-gtk --enable-examples --enable-tests
+ 1731  ./waf configure --enable-examples --enable-tests
+ 1732  sudo apt-get install libgtk-3-common libgtk-3-dev
+ 1733  ./waf configure --enable-examples --enable-tests
+ 1734  ./waf configure --disable-gtk --enable-examples --enable-tests
+ 1735  ./waf
+ 1736  ./waf --valgrind --run first
+ 1737  ./waf configure
+ 1738  cd src
+ 1739  ls
+ 1740  cd ..
+ 1741  ./waf --run myfirst -vis
+ 1742  ./waf --run myfirst --vis
+ 1743  ./waf --run first --vis
+ 1744  ./waf --run scratch/myfirst --vis
+ 1745  gnuplot
+ 1746  lspci | grep VGA
+ 1747  sudo lshw -C dis[lay
+ 1748  sudo lshw -C display
+ 1749  lspci -k | grep -A 2 -i "VGA"
+ 1750  software-properties-gtk
+ 1751  prime-select query
+ 1752  sudo apt install nvidia-prime
+ 1753  prime-select query
+ 1754  gdb build/scratch/star
+ 1755  q
+ 1756  exit
+ 1757  cd Desktop/
+ 1758  cd ns3_workspace/
+ 1759  ls
+ 1760  cd ns-allinone-3.29/
+ 1761  cd ns-3.29/
+ 1762  l
+ 1763  cp examples/tutorial/first.py scratch/first.py
+ 1764  ls
+ 1765  cd examples
+ 1766  ls
+ 1767  cd ..
+ 1768  cd src
+ 1769  cd fd-net-device/
+ 1770  ls
+ 1771  cd examples
+ 1772  ls
+ 1773  subl fd-emu-ping.c
+ 1774  subl fd-emu-ping.cc
+ 1775  netstat -rn
+ 1776  ip route | grep default
+ 1777  ping google.com
+ 1778  sudo ifconfig eth0 promisc
+ 1779  sudo ifconfig acer-aspire promisc
+ 1780  sudo ifconfig wlp3s0 promisc
+ 1781  if config
+ 1782  ifconfig
+ 1783  ip route | grep default
+ 1784  ./waf --enable-suid
+ 1785  cd ..
+ 1786  ./waf --enable-suid
+ 1787  ./waf build --enable-suid
+ 1788  ./waf build --enable-tests --enable-examples
+ 1789  ./waf --check-profile
+ 1790  ./waf configure --enable-sudo
+ 1791  ./waf configure --enable-sudo --enable-tests --enable-examples
+ 1792  sudo chown root.root build/src/fd-net-device/ns3-dev-raw-sock-creator
+ 1793  ls
+ 1794  cd build
+ 1795  ls
+ 1796  cd src
+ 1797  ls
+ 1798  cd fd-net-device/
+ 1799  ls
+ 1800  cd ..
+ 1801  sudo chown root.root build/src/fd-net-device/ns3-dev-raw-sock-debug
+ 1802  sudo chown root.root build/src/fd-net-device/ns3-raw-sock-debug
+ 1803  sudo chown root.root build/src/fd-net-device/ns3-raw-sock-creator-debug
+ 1804  sudo chown root.root build/src/fd-net-device/ns3.29-raw-sock-creator-debug
+ 1805  sudo chmod 4755 build/src/fd-net-device/ns3.29-raw-sock-creator-debug
+ 1806  cd scratch
+ 1807  ls
+ 1808  cp src/fd-net-device/examples/fd-emu-ping.cc 
+ 1809  cd ..
+ 1810  cp src/fd-net-device/examples/fd-emu-ping.cc scratch/fd-emu-ping.cc
+ 1811  ./waf --run scratch/fd-emu-ping.cc
+ 1812  sudo ./waf --run scratch/fd-emu-ping.cc
+ 1813  ./waf configure --enable-sudo --enable-tests --enable-examples
+ 1814  ./waf --run scratch/fd-emu-ping.cc
+ 1815  ./waf --run scratch/fd-emu-ping
+ 1816  ./waf configure --enable-sudo --enable-tests --enable-examples
+ 1817  ./waf --run scratch/fd-emu-ping
+ 1818  ./waf --run fd-emu-ping
+ 1819  ./waf configure --enable-sudo --enable-tests --enable-examples
+ 1820  ./waf --run fd-emu-ping
+ 1821  ./waf  fd-emu-ping
+ 1822  ./waf  --run fd-emu-ping
+ 1823  ./waf --run scratch/fd-emu-ping.cc
+ 1824  ./waf configure --enable-sudo --enable-tests --enable-examples
+ 1825  ./waf --run scratch/fd-emu-ping.cc
+ 1826  ./waf --valgrind --run first
+ 1827  ./waf configure --enable-tests --enable-examples
+ 1828  ./waf configure --disable-gtk --enable-tests --enable-examples
+ 1829  ./waf --valgrind --run first
+ 1830  cd examples
+ 1831  ls
+ 1832  cd tutorial
+ 1833  ls
+ 1834  cd ..
+ 1835  cd ns-3.29/
+ 1836  cd scratch/
+ 1837  ls
+ 1838  cd .
+ 1839  cd ..
+ 1840  cd examples/tutorial
+ 1841  ls
+ 1842  subl first.cc
+ 1843  cd ..
+ 1844  ./waf configure --disable-gtk --enable-tests --enable-examples
+ 1845  ./waf --valgrind --run first
+ 1846  ./waf configure --disable-gtk --enable-tests --enable-examples
+ 1847  ./waf --valgrind --run first
+ 1848  cp examples/tcp/star.cc scratch/star.cc
+ 1849  ./waf configure --enable-tests --enable-examples
+ 1850  ./waf
+ 1851  gdb build/scratch/star
+ 1852  ./waf
+ 1853  ./waf shell
+ 1854  cd examples
+ 1855  cd tcp
+ 1856  ls
+ 1857  ./waf --run tcp-bulk-send
+ 1858  ./waf --run examples/tcp/tcp-bulk-send.cc
+ 1859  cd ..
+ 1860  ./waf --run tcp-bulk-send
+ 1861  ./waf --run tcp-variants-comparison
+ 1862  ./waf --run matrix-topology
+ 1863  subl examples/matrix-toplogy/matrix-topology.cc
+ 1864  ls
+ 1865  cd examples/
+ 1866  ls
+ 1867  cd matrix-topology/
+ 1868  ls
+ 1869  subl matrix-topology.cc 
+ 1870  cd ..
+ 1871  cp examples/tcp/tcp-bulk-send scratch/tcp-bulk-send.cc
+ 1872  cp examples/tcp/tcp-bulk-send.cc scratch/tcp-bulk-send.cc
+ 1873  cd scratch
+ 1874  subl tcp-bulk-send.cc 
+ 1875  cd ..
+ 1876  ./waf configure --enable-tests --enable-examples
+ 1877  ./waf --run tcp-bulk-send
+ 1878  ./waf --run tcp-bulk-send -v
+ 1879  ./waf configure --enable-tests --enable-examples
+ 1880  ./waf --run tcp-bulk-send
+ 1881  ./waf configure --enable-tests --enable-examples
+ 1882  ./waf --run tcp-bulk-send
+ 1883  ./waf configure --enable-tests --enable-examples
+ 1884  ./waf --run tcp-bulk-send
+ 1885  ls
+ 1886  cd  scratch
+ 1887  ls
+ 1888  cd ..
+ 1889  ls
+ 1890  subl tcp-bulk-send.xml
+ 1891  ./waf configure --enable-tests --enable-examples
+ 1892  ./waf --run tcp-bulk-send
+ 1893  ls
+ 1894  ./waf configure --enable-tests --enable-examples
+ 1895  ./waf --run tcp-bulk-send
+ 1896  ls
+ 1897  ./waf configure
+ 1898  ./waf --run tcp-bulk-send
+ 1899  ls
+ 1900  cd ..
+ 1901  cd netanim-3.108/
+ 1902  ls
+ 1903  ./NetAnim
+ 1904  NetAnim
+ 1905  sudo apt install netanim
+ 1906  ./NetAnim
+ 1907  NetAnim
+ 1908  sudo apt install canberra-gtk-module
+ 1909  sudo apt-get install canberra-gtk-module
+ 1910  sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+ 1911  NetAnim
+ 1912  ./NetAnim
+ 1913  NetAnim
+ 1914  ls
+ 1915  sudo apt-get install gtk
+ 1916  sudo apt-get install gnome
+ 1917  sudo apt-get install python-lxml
+ 1918  ./NetAnim
+ 1919  cd Dea
+ 1920  cd Desktop/
+ 1921  cd ns3_workspace/
+ 1922  cd ns-allinone-3.29/
+ 1923  cd ns
+ 1924  cd ns-3.29/
+ 1925  ls
+ 1926  cd examples
+ 1927  ls
+ 1928  cd tutorial
+ 1929  ls
+ 1930  cd ..
+ 1931  cd scratch
+ 1932  ls
+ 1933  cd ..
+ 1934  ./waf examples/tutorial/first.py --vis
+ 1935  cd src/internet/model
+ 1936  ls
+ 1937  subl tcp-ledbat.cc
+ 1938  ./waf --configure 
+ 1939  cd ..
+ 1940  ./waf --configure 
+ 1941  ./waf configure
+ 1942  ./waf --run tcp-bulk-send
+ 1943  cd ..
+ 1944  cd netanim-3.108/
+ 1945  ./NetAnim
+ 1946  sudo ./NetAnim
+ 1947  cd ..
+ 1948  ls
+ 1949  cd ns3
+ 1950  cd ns-3.29/
+ 1951  ls
+ 1952  subl dumbbell-animation.xml 
+ 1953  subl tcp-bulk-send.xml
+ 1954  gdb build/scratch/star
+ 1955  history

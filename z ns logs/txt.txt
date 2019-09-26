@@ -1,0 +1,43 @@
+Enabling Pcap and Ascii trace
+                                         
+
+Pacp-
+-----------------------
+bool tracing = false;
+ ----------------------------------
+  CommandLine cmd;
+  cmd.AddValue ("tracing", "Enable pcap tracing", tracing);
+ ---------------------------------------------
+
+
+  if (tracing == true)
+    {
+      pointToPoint.EnablePcapAll ("mythird");
+      phy.EnablePcap ("mythird",apDevices.Get(0));
+      csma.EnablePcap ("mythird", csmaDevices.Get (0), true);
+    }
+
+Pcap reading-
+$ tcpdump -nn -tt -r third-0-0.pcap
+
+------------------------------------------------------------------------------------
+Ascii-
+
+bool asciitracing = false;   
+ //added to control on Ascii Tracing  file generation 
+---------------- 
+cmd.AddValue ("asciitracing", "Enable Ascii tracing", asciitracing); 
+-----------------
+ if(asciitracing==true)                // Added to get ascii tracing
+   {     
+       AsciiTraceHelper ascii;
+       pointToPoint.EnableAsciiAll (ascii.CreateFileStream ("mythird1.tr"));
+       phy.EnableAscii (ascii.CreateFileStream ("mythird2.tr"), apDevices.Get (0));
+       csma.EnableAscii (ascii.CreateFileStream ("mythird3.tr"), csmaDevices.Get (0));
+   } 
+
+• +: An enqueue operation occurred on the device queue;
+• -: A dequeue operation occurred on the device queue;
+• d: A packet was dropped, typically because the queue was full;
+• r: A packet was received by the net device.
+To understand with example, go through Ascii in first.cc.

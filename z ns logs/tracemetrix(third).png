@@ -1,0 +1,23 @@
+UDP ALL: 
+------ Stream 0 ------
+Ips: 		10.1.2.4 --> 10.1.3.3
+Ports: 		9 --> 49153
+Number of:
+  -> Sent packets: 	0
+  -> Received packets: 	1
+  -> Dropped packets: 	0
+  -> Drop sequences: 	0
+Average drop: 	0.0
+Drop Variance: 	0.0
+
+------ Stream 1 ------
+Ips: 		10.1.3.3 --> 10.1.2.4
+Ports: 		49153 --> 9
+Number of:
+  -> Sent packets: 	1
+  -> Received packets: 	0
+  -> Dropped packets: 	0
+  -> Drop sequences: 	0
+Average drop: 	0.0
+Drop Variance: 	0.0
+
