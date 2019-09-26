@@ -1,0 +1,60 @@
+                 
+  
+1. tcp dump
+  
+  tcpdump -n -t -r filename
+
+2.  wireshark        .pcap files
+     
+     wireshark filename  
+
+
+3. Visualize the output of ns-3 examples by using PyViz and NetAnim
+
+           ./waf --run first --vis
+
+4. netanim  -  xml files
+
+../netanim-3.108/NetAnim 
+
+
+
+plo
+5.ascii file      .tr files
+
+
+    ./waf --run "examples/tutorial/third --asciitracing=true"            --ascii enabling
+
+     java -jar tracemetrics.jar                  --open TraceMetrics   
+
+
+6.    valgrid for memory problms
+ (simulation close)
+		----------------------------
+		- if required disable gtk
+
+		./waf configure --disable-gtk --enable-examples --enable-tests
+
+		./waf --valgrind --run first(example_name)
+
+
+7.gnu plotting           .data file
+
+       -enable gnu plotting in code   (.data file is created)
+
+ gnuplot      
+plot (drag/drop ) with  line
+
+
+8.  vis 
+     
+     ./waf --run first --vis
+
+9. gdb dubugging
+        
+        ./waf shell
+
+        gdb build/scratch/star
+
+        
+
