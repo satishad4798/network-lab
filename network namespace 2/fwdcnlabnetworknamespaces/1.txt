@@ -1,0 +1,18 @@
+student@nitk-OptiPlex-9010:~$ sudo ip netns del red
+student@nitk-OptiPlex-9010:~$ sudo ip netns list
+student@nitk-OptiPlex-9010:~$ sudo ip netns add red
+student@nitk-OptiPlex-9010:~$ sudo ip link add eth0 type veth peer name eth1
+student@nitk-OptiPlex-9010:~$ sudo ip link set eth0 netns red
+student@nitk-OptiPlex-9010:~$ sudo ip netns exec red ip link set lo upstudent@nitk-OptiPlex-9010:~$ sudo ip netns exec red ip link set eth0 up
+student@nitk-OptiPlex-9010:~$ sudo ip netns exec red ip address add 10.0.0.1/24 dev eth0
+student@nitk-OptiPlex-9010:~$ sudo ip addr add 10.0.0.3/24 dev eth1
+student@nitk-OptiPlex-9010:~$ sudo ip link set eth1 up
+student@nitk-OptiPlex-9010:~$ ping 10.0.0.1
+PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.
+64 bytes from 10.0.0.1: icmp_seq=1 ttl=64 time=0.115 ms
+64 bytes from 10.0.0.1: icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from 10.0.0.1: icmp_seq=3 ttl=64 time=0.049 ms
+^C
+--- 10.0.0.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2046ms
+rtt min/avg/max/mdev = 0.045/0.069/0.115/0.033 ms

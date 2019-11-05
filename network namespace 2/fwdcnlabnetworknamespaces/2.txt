@@ -1,0 +1,77 @@
+Script started on 2019-10-23 15:05:50+0530
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns del green
+[sudo] password for student: 
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns del green[K[K[K[K[Kblue
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns del blue[K[K[K[Kred
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns del red[C[1P[1P[1P[1P[1P[1@l[1@i[1@n[1@k[C[C[C[C[C[C[C[C[K[K[Keth0
+Cannot find device "eth0"
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip link del eth0[1P[1P[1P[1P[1@n[1@e[1@t[1@n[1@s
+Cannot remove namespace file "/var/run/netns/eth0": No such file or directory
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ ip link -list
+Command "-list" is unknown, try "ip link help".
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ ip link -list[K[K[K[K[Klist
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 90:b1:1c:a3:11:06 brd ff:ff:ff:ff:ff:ff
+3: lxcbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:16:3e:00:00:00 brd ff:ff:ff:ff:ff:ff
+10: br0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 90:b1:1c:a3:11:06 brd ff:ff:ff:ff:ff:ff
+3: lxcbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:16:3e:00:00:00 brd ff:ff:ff:ff:ff:ff
+10: br0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sidp [K[K[K[Kudo ip netns [K]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns [K]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns add red
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns add green
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo [K[K[K[K[Ksudo ip link add etho[K0 type veth ep[K[Kpeern na me eth`[K1
+Usage: ip link <options> type veth [peer <options>]
+To get <options> type 'ip link add help'
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip link add eth0 type veth peern namme eth1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cname[1P eth1[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Came [1Peth1[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C name eth1[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip link add eth0 type veth peer namee eth1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C type veth peer name [1Peth1[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 type veth peer name eth1[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[K3
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip link set eth0 e[Knetns red
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip link set eth0 netns red[1P[1@2[C[C[C[C[C[C[C[C[C[C[K[K[Kgreen
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns exec red ip link set lo up [A
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns exec red ip link set lo up [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@g[1@re ip link set lo up [A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce ip link set lo upp[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn ip link set lo up[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns[K[K[K[K[K[K[K[K[K ip link set eth1 netns green
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip link set eth1 netns green[1P[1@3[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Kred
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo [K[K[K[K[Ksudo ip netns exec red ip address add 10 .0.0.1/24 dev eth0
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns exec red ip address add 10..0.0.1/24 dev eth0[C[1P[1@3[C[C[C[C[C[C[C[C[C[C[C[C[K2[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ip address add 10.0[1P[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ip address add 10.0.[1P[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ip address add 10.0.0[1P[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg ip address add 10.0.[1@0[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr ip address add 10.0[1@.[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce ip address add 10.[1@0[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce ip address add 10[1@.[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn ip address add 1[1@0[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns exec green ip address add 110.0.0.3/24 dev eth2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K1[C[1P[1@2
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip link set deve[K eth1 up
+Cannot find device "eth1"
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo p netns exec red ip link set eth0 u p
+sudo: p: command not found
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo p netns exec red ip link set eth0 upp[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C netns exec red ip link set eth0 up [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci netns exec red ip link set eth0 upp[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[Cp netns exec red ip link set eth0 up[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C
+
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns exec red ip link set eth0 uup[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C up[K[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1 up[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Cannot find device "eth1"
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns exec red ip link set eth1 uup[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ip link set eth1 up[K[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ip link set eth1 up [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg ip link set eth1 up [A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr ip link set eth1 upp[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce ip link set eth1 up[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce ip link set eth1 up[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn ip link set eth1 up[A]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns exec green ip link set eth11 up[C[1P up2 up[C
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ sudo ip netns exec red ping 10.0.0.3
+PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.
+64 bytes from 10.0.0.3: icmp_seq=1 ttl=64 time=0.063 ms
+64 bytes from 10.0.0.3: icmp_seq=2 ttl=64 time=0.042 ms
+64 bytes from 10.0.0.3: icmp_seq=3 ttl=64 time=0.041 ms
+^C
+--- 10.0.0.3 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2030ms
+rtt min/avg/max/mdev = 0.041/0.048/0.063/0.012 ms
+]0;student@nitk-OptiPlex-9010: ~[01;32mstudent@nitk-OptiPlex-9010[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-10-23 15:12:30+0530

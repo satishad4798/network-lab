@@ -1,0 +1,9 @@
+TO RUN A NETWORK APPLICATION INSIDE THE NETWORK NAMESPACE
+	sudo ip netns exec saurabh ip link set dev lo up
+	sudo ip netns exec saurabh ping 127.0.0.1
+
+TO MOVE THE PHYSICAL NIC INTERFACE INSIDE THE NETWORK NAMESPACE
+	sudo ip link set [physical NIC name] netns [network-namesace-name]
+
+TO DESTROY AN EXISTING NETWORK NAMESPACE AFTER KILLING THE PROCESSES RUNNING INSIDE IT\
+	sudo ip [-all] netns delete [ NAME ]
